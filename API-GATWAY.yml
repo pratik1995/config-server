@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: MOA-SERVICE
+        uri: lb://MOA-SERVICE
+        predicates:
+          - Path=/MarketOfferingAreas/**
+      - id: MO-SERVICE
+        uri: lb://MO-SERVICE
+        predicates: 
+          - Path=/MarketOfferings/**
