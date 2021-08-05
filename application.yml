@@ -8,7 +8,3 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8889/eureka/ 
   
-logging:
-  level:
-    root: DEBUG
-    
