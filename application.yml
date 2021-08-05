@@ -4,7 +4,17 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://peer-1-server.com:8762/eureka/,http://peer-3-server.com:8764/eureka/,http://peer-2-server.com:8763/eureka/
-
+  datasource:
+    url: jdbc:mysql://localhost:3306/datamodeldev
+    username: root
+    password: Hello@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
+  zipkin:
+    base-url: http://localhost:9411/
+    
 logging:
   level:
     root: DEBUG
