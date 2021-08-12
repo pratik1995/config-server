@@ -10,3 +10,8 @@ spring:
         uri: lb://MO-SERVICE
         predicates: 
           - Path=/MarketOfferings/**
+      - id: USER-SERVICE
+        uri: lb://USER-SERVICE
+        predicates: 
+          - Path=/Role/**
+          - Path=/User/**
